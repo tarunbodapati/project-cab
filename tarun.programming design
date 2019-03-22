@@ -1,0 +1,82 @@
+#include<stdio.h>
+void main()
+{
+				int arr,tar;
+				int a=0,b=20,c=30,d=40,e=50;
+             	printf("welcome to TARUN CAB SERVICE");
+				printf("detecting location");
+            	printf("enter the pickup location\n");
+				scanf("%d",&arr);
+				printf("enter the drop location\n");
+				scanf("%d",&tar);
+				if((arr==a||b||c||d||e)&&(tar==a||b||c||d||e))
+					{	
+						printf("enter the cab type");
+						int n,distance,fare,total,x
+						;
+						distance=tar-arr;
+						scanf("%d",&n);
+
+						switch(n)
+						{
+							case 1:
+									printf("for micro");
+                                    if(a&&b||a&&c||a&&d||a&&e||b&&c||b&&d||b&&e||c&&d||c&&e||d&&e)
+									{
+	                                  fare=10*distance;
+	                                  total=(fare+((0.05)*fare));
+	                                  
+			                           x=total-50;
+									  printf("total fare is%d",abs(x));
+									  
+									  
+									
+									}
+									break;
+                            case 2:
+	                                printf("for mini");
+	                                if(a&&b||a&&c||a&&d||a&&e||b&&c||b&&d||b&&e||c&&d||c&&e||d&&e)
+									{
+											fare=12*distance;
+											total=(fare+((0.05)*fare));
+										
+											 x=total-50;
+										    printf("total fare is %d",abs(x));
+										
+									}
+									break;
+							case 3:
+									printf("for prime");
+									if(a&&b||a&&c||a&&d||a&&e||b&&c||b&&d||b&&e||c&&d||c&&e||d&&e)
+									{
+											fare=13*distance;
+											total=(fare+((0.05)*fare));
+											 x=total-50;
+											printf("total fare is %d",abs(x));
+										
+									
+								}
+								break;
+							case 4:
+	                                printf("forsedan");
+	  								if(a&&b||a&&c||a&&d||a&&e||b&&c||b&&d||b&&e||c&&d||c&&e||d&&e)
+									{
+											fare=14*distance;
+											total=(fare+((0.05)*fare));
+											 x=total-50;
+											printf("total fare is %d",abs(x));
+										
+									}
+									break;
+	
+						}		
+
+					}	
+                   else
+										{
+                                             printf("the route not found");
+                                        }
+
+}
+
+
